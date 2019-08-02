@@ -17,3 +17,10 @@ Run gradle task **bootJar** to build jar and then run **java -jar tra-demo-0.0.1
 or
 
 Run gradle task **bootRun** to start application immediately after building.
+
+#### Security
+
+Basic Auth
+
+username: **user**\
+password: **user**
