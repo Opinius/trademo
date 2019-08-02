@@ -8,8 +8,8 @@ public class ExceptionFactory {
     private static final String TYPE_NOT_FOUND = "Object type with %d is not found";
     private static final String SCENE_NOT_FOUND = "Scene with %d is not found";
     private static final String SCENE_HAS_NO_SUCH_OBJECT = "Scene with %d has no object with id %d";
-    private static final String OBJECT_IS_NOT_STANDALONE = "Object with %s can not be standalone";
-    private static final String OBJECT_IS_STANDALONE = "Object with %s can not be rig out to other";
+    private static final String OBJECT_IS_NOT_STANDALONE = "Object %s can not be standalone";
+    private static final String OBJECT_IS_STANDALONE = "Object %s can not be used as equipment";
 
     public static RuntimeException objectNotFoundException(Integer objectId) {
         return new NotFoundException(String.format(OBJECT_NOT_FOUND, objectId));
