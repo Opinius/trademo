@@ -13,6 +13,9 @@ public interface SceneObjectsRepository extends CrudRepository<SceneObject, Inte
     @Query("SELECT o FROM SceneObject o WHERE o.sceneId = ?1")
     Collection<SceneObject> getObjects(Integer sceneId);
 
+    @Query("DELETE FROM SceneObject o WHERE o.sceneId = ?1")
+    void deleteObjectsFromScene(Integer sceneId);
+
     @Query("DELETE FROM SceneObject o WHERE o.parentObjectId = ?1")
     void deleteChildren(Integer objectId);
 }

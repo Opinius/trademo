@@ -43,6 +43,7 @@ public class SceneServiceImpl implements SceneService {
 
     @Override
     public void deleteScene(Integer id) {
+        sceneObjectsRepository.deleteObjectsFromScene(id);
         scenesRepository.deleteById(id);
     }
 
