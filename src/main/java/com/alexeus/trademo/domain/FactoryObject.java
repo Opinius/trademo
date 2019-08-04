@@ -2,11 +2,14 @@ package com.alexeus.trademo.domain;
 
 import com.alexeus.trademo.domain.types.JsonbType;
 import com.fasterxml.jackson.databind.JsonNode;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 
 import javax.persistence.*;
 
+@ApiModel(value = "Factory Object")
 @Entity
 @Table(name = "factory_objects")
 @TypeDef(name = "jsonb", typeClass = JsonbType.class)
@@ -20,6 +23,7 @@ public class FactoryObject {
     @Column(name = "subtype")
     private String subType;
     private String name;
+    @ApiModelProperty(value = "Object attributes as key-value pairs", dataType = "java.lang.String", example = "length, width etc")
     @Type(type = "jsonb")
     @Column(columnDefinition = "jsonb")
     private JsonNode attributes;

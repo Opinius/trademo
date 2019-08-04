@@ -1,5 +1,5 @@
 insert into object_types (name) values ('independent');
-insert into object_types (name) values ('rigging');
+insert into object_types (name, independent) values ('rigging', false);
 
 insert into factory_objects (type_id, subtype, name, attributes)
 values ((select id from object_types where name = 'independent'), 'table', 'Basic table', '{"length":1000, "width":800, "height":200, "carrying": 100}');
