@@ -8,7 +8,9 @@ You should create database and DB user accordingly to the given credentials or m
 
 All necessary tables and some test data will be created automatically when you run bootjar.
 
-Swagger docs endpoint: http://localhost:8080/v2/api-docs
+Swagger docs: http://localhost:8080/v2/api-docs
+
+Swagger UI: http://localhost:8080/swagger-ui.html
 
 #### Running application
 
