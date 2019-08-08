@@ -1,5 +1,9 @@
 ## TRA Demo application
 
+### This demo application is available on Heroku:
+https://tra-demo.herokuapp.com/ (username/password: user/user)
+
+#### Local set-up
 First of all you need to set-up Postgres DB.
 
 Flyway settings in *build.gradle* and Spring datasource settings in *application.properties* must be the same.
